@@ -1,7 +1,7 @@
 const generateForm = document.querySelector(".generate-form");
 const imageGallery = document.querySelector(".image-gallery");
 
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "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";
 let isImageGenerating = false;
 
 const updateImageCard = (imgDataArray) => {
@@ -38,6 +38,7 @@ const generateAiImages = async (userPrompt, userImgQuantity) => {
 
         if(!response.ok) throw new Error("Failed to generate images! Please try again.");
         const { data } = await response.json();
+        console.log(data);
         updateImageCard([...data]);
     } catch (error) {
         alert(error.message);

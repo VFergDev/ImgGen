@@ -1,7 +1,8 @@
 const generateForm = document.querySelector(".generate-form");
 const imageGallery = document.querySelector(".image-gallery");
 
-const OPENAI_API_KEY = "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";
+const apiKey = "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";
+const base64ApiKey = btoa(`:${apiKey}`);
 let isImageGenerating = false;
 
 const updateImageCard = (imgDataArray) => {
@@ -26,7 +27,7 @@ const generateAiImages = async (userPrompt, userImgQuantity) => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${OPENAI_API_KEY}`
+                "Authorization": `Basic ${base64ApiKey}`
             },
             body: JSON.stringify({
                 prompt: userPrompt,

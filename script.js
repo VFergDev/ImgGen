@@ -1,7 +1,7 @@
 const generateForm = document.querySelector(".generate-form");
 const imageGallery = document.querySelector(".image-gallery");
 
-const apiKey = "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";
+const apiKey = "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";
 const base64ApiKey = btoa(`:${apiKey}`);
 let isImageGenerating = false;
 

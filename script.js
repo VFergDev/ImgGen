@@ -5,7 +5,7 @@ const imageGallery = document.querySelector(".image-gallery");
 
 const OPENAI_API_KEY = window.config.API_KEY;
 let isImageGenerating = false;
-
+console.log(OPENAI_API_KEY);
 const updateImageCard = (imgDataArray) => {
     imgDataArray.forEach((imgObject, index) => {
         const imgCard = imageGallery.querySelectorAll(".img-card")[index];

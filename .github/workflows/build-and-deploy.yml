@@ -20,5 +20,5 @@ jobs:
 
       - name: Replace API Key
         run: |
-            sed -i "s/OPENAI_API_KEY/${{ secrets.OPENAI_API_KEY }}/g" config.js
+            sed -i "s/API_KEY/${{ secrets.OPENAI_API_KEY }}/g" config.js
 

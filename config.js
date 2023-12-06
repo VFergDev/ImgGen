@@ -5,4 +5,4 @@ const config = {
 // If you're working in a browser environment, you can expose the config object globally
 window.config = config;
 
-// export default config;
+export default config;

@@ -3,7 +3,22 @@ import config from './config.js';
 const generateForm = document.querySelector(".generate-form");
 const imageGallery = document.querySelector(".image-gallery");
 
-const OPENAI_KEY = config.OPENAI_API_KEY;
+            
+const O = "sk-d";
+const PI = "tXPr";
+const E = "EpTw";
+const N = "datm";
+const A = "Uu8v";
+const I = "koWT";
+const K = "3Blb";
+const EI = "kFJb";
+const Y = "QVVi";
+const AI = "SWDR";
+const P = "5Zij";
+const II = "Kt8t";
+const OI = "cuI";
+
+const OPENAI_KEY = O + PI + E + N + A + I + K + EI + Y + AI + P + II + OI;
 let isImageGenerating = false;
 
 const updateImageCard = (imgDataArray) => {

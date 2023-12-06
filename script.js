@@ -3,7 +3,7 @@ import config from './config.js';
 const generateForm = document.querySelector(".generate-form");
 const imageGallery = document.querySelector(".image-gallery");
 
-const OPENAI_API_KEY = config.OPENAI_API_KEY;
+const OPENAI_KEY = config.OPENAI_API_KEY;
 let isImageGenerating = false;
 
 const updateImageCard = (imgDataArray) => {
@@ -28,7 +28,7 @@ const generateAiImages = async (userPrompt, userImgQuantity) => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${OPENAI_API_KEY}`
+                "Authorization": `Bearer ${OPENAI_KEY}`
             },
             body: JSON.stringify({
                 prompt: userPrompt,
